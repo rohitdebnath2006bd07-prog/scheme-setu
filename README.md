@@ -1,3 +1,7 @@
+# scheme-setu
+
+Find government welfare schemes you may qualify for - privacy-first, static site.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
