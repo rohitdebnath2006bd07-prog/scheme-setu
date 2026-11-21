@@ -114,7 +114,11 @@ export const schemeSchema = z.object({
     .optional(),
   lastVerified: z
     .string()
-    .datetime({ offset: true }, "Must be a valid ISO 8601 datetime"),
+    .datetime({ offset: true })
+    .refine(
+      () => true,
+      "Must be a valid ISO 8601 datetime"
+    ),
   verificationStatus: z.enum(["verified", "needs-verification"]),
   benefits: z
     .array(

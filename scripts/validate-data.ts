@@ -18,7 +18,7 @@ let checked = 0;
 
 function loadSchemesFromDir(dir: string): Scheme[] {
   const schemes: Scheme[] = [];
-  const entries = readdirSync(dir, { recursive: true });
+  const entries: string[] = readdirSync(dir, { recursive: true }) as string[];
 
   for (const entry of entries) {
     if (!entry.endsWith(".json")) continue;
@@ -27,7 +27,7 @@ function loadSchemesFromDir(dir: string): Scheme[] {
       const raw = JSON.parse(readFileSync(filePath, "utf-8"));
       schemes.push(raw);
     } catch (err) {
-      errors.push(`${entry}: Failed to parse JSON - ${err}`);
+      errors.push(`${entry}: Failed to parse JSON - ${String(err)}`);
     }
   }
 
@@ -63,7 +63,7 @@ function validate() {
     try {
       validateRuleFields(scheme);
     } catch (err) {
-      errors.push(`${scheme.id}: ${err.message}`);
+      errors.push(`${scheme.id}: ${(err as Error).message}`);
     }
 
     // 4. URL validation (https only)

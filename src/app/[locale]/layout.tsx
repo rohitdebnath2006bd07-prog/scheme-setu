@@ -7,7 +7,7 @@ import { locales, defaultLocale } from "@/lib/i18n";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }
 
 const LOCALE_LABELS: Record<string, string> = {
@@ -16,17 +16,16 @@ const LOCALE_LABELS: Record<string, string> = {
   as: "অসমীয়া",
 };
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: LocaleLayoutProps) {
-  const locale = params.locale;
-  const t = getTranslations({ namespace: "common" });
+  const locale = (await params).locale;
+  const t = await getTranslations({ namespace: "common", locale });
   const router = useRouter();
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
 
-  // Load saved language preference from localStorage after hydration
   useEffect(() => {
     setMounted(true);
     const saved = localStorage.getItem("scheme-setu-locale");
@@ -34,8 +33,6 @@ export default function LocaleLayout({
       router.push(`/${saved}${pathname}`);
     }
   }, [locale, pathname, router]);
-
-  const isCurrent = (l: string) => l === locale;
 
   return (
     <html lang={locale} className="h-full">

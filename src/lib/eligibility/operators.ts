@@ -93,7 +93,7 @@ export function opNotExists(answer: unknown): boolean {
  * Operator lookup table. Maps each RuleOp to its evaluation function.
  * All functions are pure: same inputs always produce same output.
  */
-export const OPERATORS: Record<RuleOp, (answer: unknown, ruleValue: unknown) => boolean> = {
+export const OPERATORS: Record<RuleOp, (answer: unknown, ruleValue?: unknown) => boolean> = {
   gte: opGte,
   lte: opLte,
   eq: opEq,
@@ -111,7 +111,7 @@ export const OPERATORS: Record<RuleOp, (answer: unknown, ruleValue: unknown) => 
 export function evaluateRule(
   op: RuleOp,
   answer: unknown,
-  ruleValue: unknown
+  ruleValue?: unknown
 ): RuleEvalResult {
   // exists/notExists don't need an actual value to compare — they check presence.
   if (op === "exists") {

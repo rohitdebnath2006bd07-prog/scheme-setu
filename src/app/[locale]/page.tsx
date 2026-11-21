@@ -1,8 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
-export default function Home() {
-  const t = getTranslations({ namespace: "common" });
+export default async function Home() {
+  const t = await getTranslations({ namespace: "common" });
 
   return (
     <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

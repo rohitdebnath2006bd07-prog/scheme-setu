@@ -74,7 +74,7 @@ describe("evaluateScheme", () => {
         ],
       });
 
-      const result = evaluateScheme(scheme, { age: 65, income: 800000 });
+      const result = evaluateScheme(scheme, { age: 65, income: "800000" });
       expect(result.outcome).toBe("ineligible");
       expect(result.failedCount).toBe(1);
       expect(result.matchedCount).toBe(1);

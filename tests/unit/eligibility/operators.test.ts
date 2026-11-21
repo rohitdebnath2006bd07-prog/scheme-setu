@@ -116,28 +116,28 @@ describe("eligibility operators", () => {
 
   describe("opExists (field is answered)", () => {
     it("returns true when answer is provided", () => {
-      expect(opExists(25, null)).toBe(true);
-      expect(opExists("male", null)).toBe(true);
-      expect(opExists(0, null)).toBe(true); // 0 is a valid answer
+      expect(opExists(25)).toBe(true);
+      expect(opExists("male")).toBe(true);
+      expect(opExists(0)).toBe(true);
     });
 
     it("returns false when answer is missing", () => {
-      expect(opExists(undefined, null)).toBe(false);
-      expect(opExists(null, null)).toBe(false);
-      expect(opExists("", null)).toBe(false);
+      expect(opExists(undefined)).toBe(false);
+      expect(opExists(null)).toBe(false);
+      expect(opExists("")).toBe(false);
     });
   });
 
   describe("opNotExists (field is NOT answered)", () => {
     it("returns true when answer is missing", () => {
-      expect(opNotExists(undefined, null)).toBe(true);
-      expect(opNotExists(null, null)).toBe(true);
-      expect(opNotExists("", null)).toBe(true);
+      expect(opNotExists(undefined)).toBe(true);
+      expect(opNotExists(null)).toBe(true);
+      expect(opNotExists("")).toBe(true);
     });
 
     it("returns false when answer is provided", () => {
-      expect(opNotExists(25, null)).toBe(false);
-      expect(opNotExists("male", null)).toBe(false);
+      expect(opNotExists(25)).toBe(false);
+      expect(opNotExists("male")).toBe(false);
     });
   });
 
@@ -162,13 +162,13 @@ describe("eligibility operators", () => {
     });
 
     it("exists returns matched/failed based on answer presence", () => {
-      expect(evaluateRule("exists", 25, null)).toBe("matched");
-      expect(evaluateRule("exists", undefined, null)).toBe("failed");
+      expect(evaluateRule("exists", 25)).toBe("matched");
+      expect(evaluateRule("exists", undefined)).toBe("failed");
     });
 
     it("notExists returns matched/failed based on answer absence", () => {
-      expect(evaluateRule("notExists", undefined, null)).toBe("matched");
-      expect(evaluateRule("notExists", 25, null)).toBe("failed");
+      expect(evaluateRule("notExists", undefined)).toBe("matched");
+      expect(evaluateRule("notExists", 25)).toBe("failed");
     });
   });
 });
