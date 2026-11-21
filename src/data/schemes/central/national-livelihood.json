@@ -1,0 +1,34 @@
+{
+  "id": "national-livelihood",
+  "name": "Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM)",
+  "nameHi": "दयानंद अंत्योदय योजना - राष्ट्रीय ग्रामीण आजीविका मिशन",
+  "summary": "Poverty reduction through self-help groups and livelihood promotion for rural poor households.",
+  "summaryHi": "ग्रामीण गरीब परिवारों के लिए स्व-सहायता समूहों और आजीविका संवर्धन के माध्यम से गरीबी उन्मूलन।",
+  "category": "employment",
+  "level": "central",
+  "ministry": "Ministry of Rural Development",
+  "officialSourceUrl": "https://aajeevika.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Livelihood support",
+      "text": "Self-help group formation, bank linkage, and livelihood funding.",
+      "textHi": "स्व-सहायता समूह गठन, बैंक लिंकेज और आजीविका निधि।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "residence", "op": "eq", "value": "rural", "text": "Rural household", "textHi": "ग्रामीण परिवार" },
+    { "field": "bpl", "op": "eq", "value": "yes", "text": "BPL household", "textHi": "बीपीएल परिवार" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["BPL card", "Aadhaar card", "SHG membership"],
+  "howToApply": [
+    { "step": 1, "text": "Join or form a self-help group at village level.", "textHi": "गांव स्तर पर स्व-सहायता समूह में शामिल हों या बनाएं।" },
+    { "step": 2, "text": "Get SHG registered and linked to bank.", "textHi": "एसएचजी पंजीकृत करें और बैंक से लिंक करें।" },
+    { "step": 3, "text": "Access livelihood funds and training.", "textHi": "आजीविका निधि और प्रशिक्षण तक पहुंच प्राप्त करें।" }
+  ],
+  "tags": ["rural", "livelihood", "self-help-group"],
+  "incomeMin": null,
+  "incomeMax": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "pm-matru-vandana",
+  "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+  "nameHi": "प्रधानमंत्री मातृ वंदना योजना (पीएमएमवीवाई)",
+  "summary": "Maternity benefit of ₹5,000 paid in three instalments to pregnant and lactating women for first living child.",
+  "summaryHi": "पहले जीवित बच्चे के लिए गर्भवती और स्तनपान कराने वाली महिलाओं को तीन किस्तों में ₹5,000 का मातृत्व लाभ।",
+  "category": "women-child",
+  "level": "central",
+  "ministry": "Ministry of Women and Child Development",
+  "officialSourceUrl": "https://wcd.nic.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Maternity benefit",
+      "text": "₹5,000 paid in three instalments for first living child of pregnant/lactating women.",
+      "textHi": "गर्भवती/स्तनपान कराने वाली महिलाओं के पहले जीवित बच्चे के लिए तीन किस्तों में ₹5,000 का भुगतान।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "gender", "op": "eq", "value": "female", "text": "Applicant must be a woman", "textHi": "आवेदक महिला होना चाहिए" },
+    { "field": "marital", "op": "eq", "value": "married", "text": "Must be married", "textHi": "विवाहित होना आवश्यक है" },
+    { "field": "occupation", "op": "neq", "value": "salaried", "text": "Not employed in regular government/PSU job", "textHi": "नियमित सरकारी/पीएसयू नौकरी में नहीं होना चाहिए" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Aadhaar card", "MCP card", "Bank account passbook"],
+  "howToApply": [
+    { "step": 1, "text": "Register at nearest Anganwadi Centre or health facility.", "textHi": "निकटतम आंगनबाड़ी केंद्र या स्वास्थ्य सुविधा में पंजीकरण करें।" },
+    { "step": 2, "text": "Submit Aadhaar, MCP card, and bank details.", "textHi": "आधार, एमसीपी कार्ड और बैंक विवरण जमा करें।" },
+    { "step": 3, "text": "Receive benefit in three instalments linked to pregnancy and childbirth stages.", "textHi": "गर्भावस्था और प्रसव के चरणों से जुड़ी तीन किस्तों में लाभ प्राप्त करें।" }
+  ],
+  "tags": ["women", "maternity", "health"],
+  "incomeMin": null,
+  "incomeMax": null
+}

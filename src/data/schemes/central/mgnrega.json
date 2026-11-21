@@ -1,0 +1,34 @@
+{
+  "id": "mgnrega",
+  "name": "Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)",
+  "nameHi": "महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार गारंटी अधिनियम (मनरेगा)",
+  "summary": "Guarantees 100 days of wage employment per year to rural households whose adult members volunteer for unskilled manual work.",
+  "summaryHi": "ग्रामीण परिवारों के वयस्क सदस्यों को अकुशल मजदूरी कार्य के लिए स्वेच्छा से काम करने पर सालाना 100 दिन का रोजगार गारंटी।",
+  "category": "employment",
+  "level": "central",
+  "ministry": "Ministry of Rural Development",
+  "officialSourceUrl": "https://nreganic.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Wage employment",
+      "text": "100 days of guaranteed wage employment per year at statutory minimum wage.",
+      "textHi": "सांविधिक न्यूनतम मजदूरी पर प्रति वर्ष 100 दिन का गारंटीकृत मजदूरी रोजगार।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "residence", "op": "eq", "value": "rural", "text": "Rural household", "textHi": "ग्रामीण परिवार" },
+    { "field": "occupation", "op": "in", "value": ["labourer", "unemployed"], "text": "Willing to do unskilled manual work", "textHi": "अकुशल मजदूरी कार्य करने को इच्छुक" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Job card", "Aadhaar card", "Bank account passbook"],
+  "howToApply": [
+    { "step": 1, "text": "Apply for job card at Gram Panchayat office.", "textHi": "ग्राम पंचायत कार्यालय में जॉब कार्ड के लिए आवेदन करें।" },
+    { "step": 2, "text": "Get job card issued after verification.", "textHi": "सत्यापन के बाद जॉब कार्ड जारी करवाएं।" },
+    { "step": 3, "text": "Request work and receive employment within 15 days.", "textHi": "काम मांगें और 15 दिनों के भीतर रोजगार प्राप्त करें।" }
+  ],
+  "tags": ["rural", "employment", "wages"],
+  "incomeMin": null,
+  "incomeMax": null
+}

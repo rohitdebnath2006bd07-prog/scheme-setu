@@ -1,0 +1,35 @@
+{
+  "id": "pm-awas-yojana",
+  "name": "PM Awas Yojana (Pradhan Mantri Awas Yojana - Urban)",
+  "nameHi": "प्रधानमंत्री आवास योजना (शहरी)",
+  "summary": "Financial assistance for construction or enhancement of houses for economically weaker sections in urban areas.",
+  "summaryHi": "शहरी क्षेत्रों में आर्थिक रूप से कमजोर वर्गों के लिए घरों के निर्माण या उन्नयन के लिए वित्तीय सहायता।",
+  "category": "housing",
+  "level": "central",
+  "ministry": "Ministry of Housing and Urban Affairs",
+  "officialSourceUrl": "https://pmaymis.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Housing assistance",
+      "text": "Central assistance for house construction or enhancement for EWS/LIG categories.",
+      "textHi": "ईडब्ल्यूएस/आईजी श्रेणियों के लिए घरों के निर्माण या उन्नयन के लिए केंद्रीय सहायता।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "category", "op": "in", "value": ["EWS", "LIG"], "text": "EWS or LIG category", "textHi": "ईडब्ल्यूएस या आईजी श्रेणी" },
+    { "field": "residence", "op": "eq", "value": "urban", "text": "Urban resident", "textHi": "शहरी निवासी" },
+    { "field": "income", "op": "lte", "value": 300000, "text": "Annual household income up to ₹3 lakh", "textHi": "वार्षिक घरेलू आय ₹3 लाख तक" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Aadhaar card", "Income certificate", "Caste certificate", "Property documents"],
+  "howToApply": [
+    { "step": 1, "text": "Apply online through PMAY-U portal or at Urban Local Body office.", "textHi": "पीएमएयू-पी पोर्टल पर ऑनलाइन आवेदन करें या शहरी स्थानीय निकाय कार्यालय में आवेदन करें।" },
+    { "step": 2, "text": "Submit required documents for verification.", "textHi": "सत्यापन के लिए आवश्यक दस्तावेज जमा करें।" },
+    { "step": 3, "text": "Receive assistance after approval.", "textHi": "अनुमोदन के बाद सहायता प्राप्त करें।" }
+  ],
+  "tags": ["housing", "urban", "ews"],
+  "incomeMin": null,
+  "incomeMax": 300000
+}

@@ -1,0 +1,32 @@
+{
+  "id": "pm-svasthya",
+  "name": "PM Ayushman Bharat Health Infrastructure Mission (PM-ABHIM)",
+  "nameHi": "प्रधानमंत्री आयुष्मान भारत स्वास्थ्य बुनियादी ढांचा मिशन",
+  "summary": "Strengthening healthcare infrastructure across India with focus on critical care and pandemic preparedness.",
+  "summaryHi": "भारत में स्वास्थ्य बुनियादी ढांचे को मजबूत करना, महत्वपूर्ण देखभाल और महामारी तैयारियों पर ध्यान।",
+  "category": "health",
+  "level": "central",
+  "ministry": "Ministry of Health and Family Welfare",
+  "officialSourceUrl": "https://nhm.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Healthcare infrastructure",
+      "text": "Critical care blocks, diagnostic labs, and public health units in districts.",
+      "textHi": "जिलों में महत्वपूर्ण देखभाल ब्लॉक, नैदानिक प्रयोगशालाएं और सार्वजनिक स्वास्थ्य इकाइयां।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "residence", "op": "exists", "value": true, "text": "Any resident", "textHi": "कोई भी निवासी" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Aadhaar card"],
+  "howToApply": [
+    { "step": 1, "text": "Visit nearest government hospital or health centre.", "textHi": "निकटतम सरकारी अस्पताल या स्वास्थ्य केंद्र पर जाएं।" },
+    { "step": 2, "text": "Avail services based on availability.", "textHi": "उपलब्धता के आधार पर सेवाएं प्राप्त करें।" }
+  ],
+  "tags": ["health", "infrastructure"],
+  "incomeMin": null,
+  "incomeMax": null
+}

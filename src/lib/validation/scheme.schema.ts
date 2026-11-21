@@ -75,7 +75,13 @@ export interface SchemeEvaluation {
 // Records not yet verified against an official source must use
 // verificationStatus: "needs-verification".
 export const schemeSchema = z.object({
-  id: z.string().slug("Scheme ID must be a URL-safe slug"),
+  id: z
+    .string()
+    .min(1, "Scheme ID is required")
+    .regex(
+      /^[a-z0-9]+(?:-[a-z0-9]+)*$/,
+      "Scheme ID must be a URL-safe slug (lowercase, hyphens only)"
+    ),
   name: z.string().min(1, "Scheme name is required"),
   nameHi: z.string().min(1, "Hindi name is required"),
   nameAs: z.string().optional(),
@@ -95,7 +101,7 @@ export const schemeSchema = z.object({
     "other",
   ]),
   level: z.enum(["central", "state"]),
-  state: z.string().optional(),
+  state: z.string().nullable().optional(),
   ministry: z.string().min(1, "Issuing ministry/department is required"),
   officialSourceUrl: z
     .string()
@@ -142,8 +148,8 @@ export const schemeSchema = z.object({
     )
     .min(1, "At least one application step is required"),
   tags: z.array(z.string()).default([]),
-  incomeMin: z.number().int().nonnegative().optional(),
-  incomeMax: z.number().int().nonnegative().optional(),
+  incomeMin: z.number().int().nonnegative().nullable().optional(),
+  incomeMax: z.number().int().nonnegative().nullable().optional(),
 });
 
 // Type inferred from the Zod schema.

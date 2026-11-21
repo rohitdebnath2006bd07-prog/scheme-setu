@@ -1,0 +1,34 @@
+{
+  "id": "pm-jeevan-jyoti",
+  "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+  "nameHi": "प्रधानमंत्री जीवन ज्योति बीमा योजना (पीएमजेजेबीवाई)",
+  "summary": "Life insurance cover of ₹2 lakh for one year, renewable annually, for bank account holders.",
+  "summaryHi": "बैंक खाता धारकों के लिए एक वर्ष के लिए ₹2 लाख का जीवन बीमा कवर, वार्षिक नवीकरणीय।",
+  "category": "finance",
+  "level": "central",
+  "ministry": "Ministry of Finance",
+  "officialSourceUrl": "https://www.jansuraksha.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Life insurance cover",
+      "text": "₹2 lakh life insurance cover for one year, renewable annually.",
+      "textHi": "एक वर्ष के लिए ₹2 लाख का जीवन बीमा कवर, वार्षिक नवीकरणीय।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "age", "op": "gte", "value": 18, "text": "Age 18-50 years", "textHi": "18-50 वर्ष आयु" },
+    { "field": "age", "op": "lte", "value": 50, "text": "Age 18-50 years", "textHi": "18-50 वर्ष आयु" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Aadhaar card", "Bank account passbook"],
+  "howToApply": [
+    { "step": 1, "text": "Contact your bank branch where you hold an account.", "textHi": "अपने बैंक शाखा से संपर्क करें जहां आपका खाता है।" },
+    { "step": 2, "text": "Fill enrollment form and submit Aadhaar.", "textHi": "नामांकन फॉर्म भरें और आधार जमा करें।" },
+    { "step": 3, "text": "Annual premium auto-debited from bank account.", "textHi": "वार्षिक प्रीमियम बैंक खाते से स्वतः डेबिट किया जाता है।" }
+  ],
+  "tags": ["life-insurance", "insurance", "banking"],
+  "incomeMin": null,
+  "incomeMax": null
+}

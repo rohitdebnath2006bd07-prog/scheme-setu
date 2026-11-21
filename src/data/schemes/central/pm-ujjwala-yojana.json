@@ -1,0 +1,35 @@
+{
+  "id": "pm-ujjwala-yojana",
+  "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+  "nameHi": "प्रधानमंत्री उज्ज्वला योजना (पीएमयूवाई)",
+  "summary": "Free LPG gas connection to women from BPL households to replace unclean cooking fuel.",
+  "summaryHi": "बीपीएल परिवारों की महिलाओं को स्वच्छ खाना पकाने के ईंधन के स्थान पर मुफ्त एलपीजी गैस कनेक्शन।",
+  "category": "women-child",
+  "level": "central",
+  "ministry": "Ministry of Petroleum and Natural Gas",
+  "officialSourceUrl": "https://www.pmuy.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Free LPG connection",
+      "text": "Deposit-free LPG connection with first refill and stove provided at no cost.",
+      "textHi": "जमा-मुक्त एलपीजी कनेक्शन जिसमें पहला रिफिल और स्टोव बिना किसी लागत के प्रदान किया जाता है।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "gender", "op": "eq", "value": "female", "text": "Applicant must be a woman", "textHi": "आवेदक महिला होना चाहिए" },
+    { "field": "bpl", "op": "eq", "value": "yes", "text": "BPL household", "textHi": "बीपीएल परिवार" },
+    { "field": "category", "op": "in", "value": ["SC", "ST", "OBC"], "text": "SC/ST/OBC category", "textHi": "एससी/एसटी/ओबीसी श्रेणी" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Aadhaar card", "BPL card", "Bank account passbook"],
+  "howToApply": [
+    { "step": 1, "text": "Apply online at pmuy.in or at nearest LPG distributor.", "textHi": "pmuy.in पर ऑनलाइन आवेदन करें या निकटतम एलपीजी वितरक के पास आवेदन करें।" },
+    { "step": 2, "text": "Submit Aadhaar, BPL card, and bank details.", "textHi": "आधार, बीपीएल कार्ड और बैंक विवरण जमा करें।" },
+    { "step": 3, "text": "Receive LPG connection after verification.", "textHi": "सत्यापन के बाद एलपीजी कनेक्शन प्राप्त करें।" }
+  ],
+  "tags": ["women", "cooking-gas", "bpl"],
+  "incomeMin": null,
+  "incomeMax": null
+}

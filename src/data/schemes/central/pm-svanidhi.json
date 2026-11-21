@@ -1,0 +1,34 @@
+{
+  "id": "pm-svanidhi",
+  "name": "PM Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi)",
+  "nameHi": "प्रधानमंत्री स्ट्रीट वेंडर्स आत्मानिभर निधि (पीएम स्वानिधि)",
+  "summary": "Micro-credit scheme providing working capital loans up to ₹50,000 to street vendors.",
+  "summaryHi": "स्ट्रीट वेंडर्स को ₹50,000 तक की कार्यशील पूंजी ऋण प्रदान करने वाली सूक्ष्म ऋण योजना।",
+  "category": "employment",
+  "level": "central",
+  "ministry": "Ministry of Housing and Urban Affairs",
+  "officialSourceUrl": "https://pmsvanidhi.mohua.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Working capital loan",
+      "text": "Loans up to ₹50,000 for street vendors to restart businesses.",
+      "textHi": "स्ट्रीट वेंडर्स को अपने व्यवसाय को फिर से शुरू करने के लिए ₹50,000 तक के ऋण।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "occupation", "op": "eq", "value": "selfEmployed", "text": "Street vendor", "textHi": "स्ट्रीट वेंडर" },
+    { "field": "residence", "op": "eq", "value": "urban", "text": "Urban area", "textHi": "शहरी क्षेत्र" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Aadhaar card", "Vending certificate", "Bank account passbook"],
+  "howToApply": [
+    { "step": 1, "text": "Apply online at pmsvanidhi.mohua.gov.in or through CSC.", "textHi": "pmsvanidhi.mohua.gov.in पर ऑनलाइन आवेदन करें या सीएससी के माध्यम से।" },
+    { "step": 2, "text": "Submit Aadhaar, vending certificate, and bank details.", "textHi": "आधार, वेंडिंग प्रमाण पत्र और बैंक विवरण जमा करें।" },
+    { "step": 3, "text": "Receive loan approval and disbursement.", "textHi": "ऋण अनुमोदन और वितरण प्राप्त करें।" }
+  ],
+  "tags": ["street-vendor", "micro-credit", "urban"],
+  "incomeMin": null,
+  "incomeMax": null
+}

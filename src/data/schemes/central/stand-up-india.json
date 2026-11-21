@@ -1,0 +1,35 @@
+{
+  "id": "stand-up-india",
+  "name": "Stand-Up India",
+  "nameHi": "स्टैंड-अप इंडिया",
+  "summary": "Bank loans between ₹10 lakh and ₹1 crore for SC/ST and women entrepreneurs to start greenfield enterprises.",
+  "summaryHi": "एससी/एसटी और महिला उद्यमियों को ग्रीनफील्ड उद्यम शुरू करने के लिए ₹10 लाख से ₹1 करोड़ तक के बैंक ऋण।",
+  "category": "employment",
+  "level": "central",
+  "ministry": "Ministry of Finance",
+  "officialSourceUrl": "https://www.standupmitra.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Enterprise loan",
+      "text": "₹10 lakh to ₹1 crore loan for setting up new enterprises.",
+      "textHi": "नए उद्यम स्थापित करने के लिए ₹10 लाख से ₹1 करोड़ तक का ऋण।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "category", "op": "in", "value": ["SC", "ST"], "text": "SC or ST category", "textHi": "एससी या एसटी श्रेणी" },
+    { "field": "gender", "op": "eq", "value": "female", "text": "Woman entrepreneur (or SC/ST)", "textHi": "महिला उद्यमी (या एससी/एसटी)" },
+    { "field": "occupation", "op": "eq", "value": "selfEmployed", "text": "Self-employed / entrepreneur", "textHi": "स्व-नियोजित / उद्यमी" }
+  ],
+  "ruleLogic": "OR",
+  "documentsRequired": ["Aadhaar card", "Caste certificate (if applicable)", "Project report", "Bank account"],
+  "howToApply": [
+    { "step": 1, "text": "Apply through Stand-Up India portal or at any bank branch.", "textHi": "स्टैंड-अप इंडिया पोर्टल या किसी भी बैंक शाखा के माध्यम से आवेदन करें।" },
+    { "step": 2, "text": "Submit project report and required documents.", "textHi": "प्रोजेक्ट रिपोर्ट और आवश्यक दस्तावेज जमा करें।" },
+    { "step": 3, "text": "Receive loan sanction and disbursement.", "textHi": "ऋण स्वीकृति और वितरण प्राप्त करें।" }
+  ],
+  "tags": ["entrepreneurship", "loan", "women", "sc-st"],
+  "incomeMin": null,
+  "incomeMax": null
+}

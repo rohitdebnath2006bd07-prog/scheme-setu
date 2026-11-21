@@ -1,0 +1,34 @@
+{
+  "id": "pm-kisan",
+  "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+  "nameHi": "प्रधानमंत्री किसान सम्मान निधि (पीएम-किसान)",
+  "summary": "Income support of ₹6,000 per year paid in three equal instalments to eligible farmer families.",
+  "summaryHi": "पात्र किसान परिवारों को सालाना ₹6,000 की आय सहायता, तीन समान किस्तों में भुगतान।",
+  "category": "agriculture",
+  "level": "central",
+  "ministry": "Ministry of Agriculture and Farmers Welfare",
+  "officialSourceUrl": "https://pmkisan.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Annual income support",
+      "text": "₹6,000 per year in three instalments of ₹2,000 each, directly transferred to bank account.",
+      "textHi": "बैंक खाते में सीधे स्थानांतरित ₹2,000 की तीन किस्तों में सालाना ₹6,000।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "occupation", "op": "eq", "value": "farmer", "text": "Must be a farmer", "textHi": "किसान होना आवश्यक है" },
+    { "field": "residence", "op": "eq", "value": "rural", "text": "Must reside in rural area", "textHi": "ग्रामीण क्षेत्र में रहना आवश्यक है" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Aadhaar card", "Land records", "Bank account passbook"],
+  "howToApply": [
+    { "step": 1, "text": "Visit the nearest Common Service Centre (CSC) or PM-KISAN portal.", "textHi": "नजदीकी कॉमन सर्विस सेंटर (सीएससी) या पीएम-किसान पोर्टल पर जाएं।" },
+    { "step": 2, "text": "Submit Aadhaar, land records, and bank account details.", "textHi": "आधार, भूमि अभिलेख और बैंक खाते का विवरण जमा करें।" },
+    { "step": 3, "text": "Verification by state government; funds transferred after approval.", "textHi": "राज्य सरकार द्वारा सत्यापन; अनुमोदन के बाद निधि स्थानांतरित की जाती है।" }
+  ],
+  "tags": ["farmer", "income-support", "rural"],
+  "incomeMin": null,
+  "incomeMax": null
+}

@@ -1,0 +1,36 @@
+{
+  "id": "assam-orunodoi",
+  "name": "Orunodoi Scheme (Assam)",
+  "nameHi": "ओरुनोडोई योजना (असम)",
+  "summary": "Assam state scheme providing monthly financial assistance of ₹1,250 to women from economically weaker families.",
+  "summaryHi": "असम राज्य योजना आर्थिक रूप से कमजोर परिवारों की महिलाओं को मासिक ₹1,250 की वित्तीय सहायता प्रदान करती है।",
+  "category": "women-child",
+  "level": "state",
+  "state": "Assam",
+  "ministry": "Finance Department, Government of Assam",
+  "officialSourceUrl": "https://finance.assam.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Monthly financial assistance",
+      "text": "₹1,250 per month transferred to woman head of family bank account.",
+      "textHi": "महिला परिवार मुखिया के बैंक खाते में मासिक ₹1,250 हस्तांतरित किया जाता है।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "gender", "op": "eq", "value": "female", "text": "Applicant must be a woman", "textHi": "आवेदक महिला होना चाहिए" },
+    { "field": "state", "op": "eq", "value": "Assam", "text": "Must be resident of Assam", "textHi": "असम का निवासी होना चाहिए" },
+    { "field": "income", "op": "lte", "value": 200000, "text": "Annual family income up to ₹2 lakh", "textHi": "वार्षिक पारिवारिक आय ₹2 लाख तक" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Aadhaar card", "BPL card", "Bank account passbook", "Income certificate"],
+  "howToApply": [
+    { "step": 1, "text": "Apply online at orunodoi.assam.gov.in or through local Gaon Panchayat.", "textHi": "orunodoi.assam.gov.in पर ऑनलाइन आवेदन करें या स्थानीय गाँव पंचायत के माध्यम से।" },
+    { "step": 2, "text": "Submit Aadhaar, BPL card, and income certificate.", "textHi": "आधार, बीपीएल कार्ड और आय प्रमाण पत्र जमा करें।" },
+    { "step": 3, "text": "Receive monthly assistance in bank account.", "textHi": "बैंक खाते में मासिक सहायता प्राप्त करें।" }
+  ],
+  "tags": ["women", "assam", "financial-assistance"],
+  "incomeMin": null,
+  "incomeMax": 200000
+}

@@ -1,0 +1,35 @@
+{
+  "id": "samagra-shiksha",
+  "name": "Samagra Shiksha Abhiyan",
+  "nameHi": "समग्र शिक्षा अभियान",
+  "summary": "School education programme from pre-school to class 12, ensuring inclusive and equitable quality education.",
+  "summaryHi": "पूर्व-प्राथमिक से कक्षा 12 तक स्कूली शिक्षा कार्यक्रम, समावेशी और समान गुणवत्तापूर्ण शिक्षा सुनिश्चित करना।",
+  "category": "education",
+  "level": "central",
+  "ministry": "Ministry of Education",
+  "officialSourceUrl": "https://www.education.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "School education support",
+      "text": "Free textbooks, uniforms, and support for government school education.",
+      "textHi": "सरकारी स्कूल शिक्षा के लिए मुफ्त पाठ्यपुस्तकें, वर्दी और सहायता।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "student", "op": "eq", "value": "yes", "text": "Must be a student", "textHi": "छात्र होना चाहिए" },
+    { "field": "age", "op": "gte", "value": 6, "text": "Age 6-18 years", "textHi": "6-18 वर्ष आयु" },
+    { "field": "age", "op": "lte", "value": 18, "text": "Age 6-18 years", "textHi": "6-18 वर्ष आयु" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Birth certificate", "Aadhaar card", "Previous school records"],
+  "howToApply": [
+    { "step": 1, "text": "Enroll at nearest government school.", "textHi": "निकटतम सरकारी स्कूल में नामांकन कराएं।" },
+    { "step": 2, "text": "Submit birth certificate and Aadhaar.", "textHi": "जन्म प्रमाण पत्र और आधार जमा करें।" },
+    { "step": 3, "text": "Receive free textbooks and uniforms.", "textHi": "मुफ्त पाठ्यपुस्तकें और वर्दी प्राप्त करें।" }
+  ],
+  "tags": ["education", "school", "children"],
+  "incomeMin": null,
+  "incomeMax": null
+}

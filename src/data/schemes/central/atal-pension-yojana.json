@@ -1,0 +1,35 @@
+{
+  "id": "atal-pension-yojana",
+  "name": "Atal Pension Yojana (APY)",
+  "nameHi": "अटल पेंशन योजना (एपीवाई)",
+  "summary": "Guaranteed pension of ₹1,000 to ₹5,000 per month after age 60, based on contributions.",
+  "summaryHi": "योगदान के आधार पर 60 वर्ष की आयु के बाद ₹1,000 से ₹5,000 प्रति माह की गारंटीकृत पेंशन।",
+  "category": "finance",
+  "level": "central",
+  "ministry": "Ministry of Finance",
+  "officialSourceUrl": "https://www.npscra.nic.in/apynps/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Guaranteed pension",
+      "text": "₹1,000 to ₹5,000 per month guaranteed pension after age 60.",
+      "textHi": "60 वर्ष की आयु के बाद ₹1,000 से ₹5,000 प्रति माह की गारंटीकृत पेंशन।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "age", "op": "gte", "value": 18, "text": "Age 18 years or above", "textHi": "18 वर्ष या उससे अधिक आयु" },
+    { "field": "age", "op": "lte", "value": 40, "text": "Age 40 years or below", "textHi": "40 वर्ष या उससे कम आयु" },
+    { "field": "occupation", "op": "neq", "value": "salaried", "text": "Not covered by statutory pension scheme", "textHi": "वैधानिक पेंशन योजना द्वारा कवर नहीं होना चाहिए" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Aadhaar card", "Bank account passbook", "Mobile number"],
+  "howToApply": [
+    { "step": 1, "text": "Open account at any bank branch or post office.", "textHi": "किसी भी बैंक शाखा या डाकघर में खाता खोलें।" },
+    { "step": 2, "text": "Submit Aadhaar and bank account details.", "textHi": "आधार और बैंक खाते का विवरण जमा करें।" },
+    { "step": 3, "text": "Choose contribution amount and start monthly debits.", "textHi": "योगदान राशि चुनें और मासिक डेबिट शुरू करें।" }
+  ],
+  "tags": ["pension", "retirement", "finance"],
+  "incomeMin": null,
+  "incomeMax": null
+}

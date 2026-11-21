@@ -1,0 +1,34 @@
+{
+  "id": "national-food-security",
+  "name": "National Food Security Act (NFSA) - PDS Ration",
+  "nameHi": "राष्ट्रीय खाद्य सुरक्षा अधिनियम - सार्वजनिक वितरण प्रणाली राशन",
+  "summary": "Subsidized food grains (rice, wheat, coarse grains) through ration shops for priority households.",
+  "summaryHi": "प्राथमिकता वाले परिवारों को राशन दुकानों के माध्यम से रियायती खाद्यान्न (चावल, गेहूं, मोटा अनाज)।",
+  "category": "food",
+  "level": "central",
+  "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+  "officialSourceUrl": "https://dfpd.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Subsidized ration",
+      "text": "5 kg food grains per person per month at subsidized rates through ration shops.",
+      "textHi": "राशन दुकानों के माध्यम से प्रति व्यक्ति प्रति माह 5 kg खाद्यान्न रियायती दरों पर।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "bpl", "op": "eq", "value": "yes", "text": "BPL or priority household", "textHi": "बीपीएल या प्राथमिकता परिवार" },
+    { "field": "category", "op": "exists", "value": true, "text": "Any category", "textHi": "कोई भी श्रेणी" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Ration card", "Aadhaar card"],
+  "howToApply": [
+    { "step": 1, "text": "Apply for ration card at local ration office or online.", "textHi": "स्थानीय राशन कार्यालय या ऑनलाइन राशन कार्ड के लिए आवेदन करें।" },
+    { "step": 2, "text": "Submit Aadhaar and proof of residence.", "textHi": "आधार और निवास का प्रमाण जमा करें।" },
+    { "step": 3, "text": "Collect ration from designated fair price shop.", "textHi": "नामित उचित मूल्य दुकान से राशन प्राप्त करें।" }
+  ],
+  "tags": ["food", "ration", "bpl"],
+  "incomeMin": null,
+  "incomeMax": null
+}

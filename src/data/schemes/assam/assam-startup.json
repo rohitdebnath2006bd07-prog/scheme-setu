@@ -1,0 +1,36 @@
+{
+  "id": "assam-startup",
+  "name": "Assam Startup Scheme",
+  "nameHi": "असम स्टार्टअप योजना",
+  "summary": "Financial assistance and support for startups and entrepreneurs in Assam.",
+  "summaryHi": "असम में स्टार्टअप और उद्यमियों के लिए वित्तीय सहायता और सहायता।",
+  "category": "employment",
+  "level": "state",
+  "state": "Assam",
+  "ministry": "Industries and Commerce Department, Government of Assam",
+  "officialSourceUrl": "https://industries.assam.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Startup funding",
+      "text": "Seed funding and incubation support for eligible startups.",
+      "textHi": "पात्र स्टार्टअप के लिए बीज धनराशि और इन्क्यूबेशन समर्थन।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "state", "op": "eq", "value": "Assam", "text": "Must be resident of Assam", "textHi": "असम का निवासी होना चाहिए" },
+    { "field": "occupation", "op": "eq", "value": "selfEmployed", "text": "Entrepreneur / self-employed", "textHi": "उद्यमी / स्व-नियोजित" },
+    { "field": "age", "op": "gte", "value": 18, "text": "Age 18 years or above", "textHi": "18 वर्ष या उससे अधिक आयु" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Aadhaar card", "Business plan", "Registration documents", "Bank account"],
+  "howToApply": [
+    { "step": 1, "text": "Apply through Assam Startup portal or Industries Department.", "textHi": "असम स्टार्टअप पोर्टल या उद्योग विभाग के माध्यम से आवेदन करें।" },
+    { "step": 2, "text": "Submit business plan and registration documents.", "textHi": "व्यवसाय योजना और पंजीकरण दस्तावेज जमा करें।" },
+    { "step": 3, "text": "Receive seed funding after evaluation.", "textHi": "मूल्यांकन के बाद बीज धनराशि प्राप्त करें।" }
+  ],
+  "tags": ["startup", "assam", "entrepreneurship"],
+  "incomeMin": null,
+  "incomeMax": null
+}

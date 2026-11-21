@@ -1,0 +1,35 @@
+{
+  "id": "post-matric-scholarship",
+  "name": "Post-Matric Scholarship for SC/ST/OBC Students",
+  "nameHi": "एससी/एसटी/ओबीसी छात्रों के लिए पोस्ट-मैट्रिक छात्रवृत्ति",
+  "summary": "Financial assistance to SC/ST/OBC students for studies beyond class 10.",
+  "summaryHi": "कक्षा 10 से आगे की पढ़ाई के लिए एससी/एसटी/ओबीसी छात्रों को वित्तीय सहायता।",
+  "category": "education",
+  "level": "central",
+  "ministry": "Ministry of Social Justice and Empowerment",
+  "officialSourceUrl": "https://scholarships.gov.in/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Scholarship",
+      "text": "Financial assistance for tuition, maintenance, and other educational expenses.",
+      "textHi": "शिक्षा शुल्क, रखरखाव और अन्य शैक्षिक खर्चों के लिए वित्तीय सहायता।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "category", "op": "in", "value": ["SC", "ST", "OBC"], "text": "SC/ST/OBC category", "textHi": "एससी/एसटी/ओबीसी श्रेणी" },
+    { "field": "student", "op": "eq", "value": "yes", "text": "Must be a student", "textHi": "छात्र होना चाहिए" },
+    { "field": "age", "op": "gte", "value": 15, "text": "Age 15 years or above", "textHi": "15 वर्ष या उससे अधिक आयु" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Caste certificate", "Income certificate", "Previous year mark sheet", "Bank account passbook"],
+  "howToApply": [
+    { "step": 1, "text": "Apply on National Scholarship Portal (scholarships.gov.in).", "textHi": "राष्ट्रीय छात्रवृत्ति पोर्टल (scholarships.gov.in) पर आवेदन करें।" },
+    { "step": 2, "text": "Submit caste certificate, income certificate, and mark sheets.", "textHi": "जाति प्रमाण पत्र, आय प्रमाण पत्र और अंकपत्र जमा करें।" },
+    { "step": 3, "text": "Receive scholarship directly in bank account.", "textHi": "छात्रवृत्ति सीधे बैंक खाते में प्राप्त करें।" }
+  ],
+  "tags": ["education", "scholarship", "sc-st-obc"],
+  "incomeMin": null,
+  "incomeMax": null
+}

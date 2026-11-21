@@ -1,0 +1,35 @@
+{
+  "id": "sukanya-samriddhi",
+  "name": "Sukanya Samriddhi Yojana",
+  "nameHi": "सुकन्या समृद्धि योजना",
+  "summary": "Small savings scheme for girl children with attractive interest rate and tax benefits.",
+  "summaryHi": "बालिकाओं के लिए छोटी बचत योजना आकर्षक ब्याज दर और कर लाभ के साथ।",
+  "category": "women-child",
+  "level": "central",
+  "ministry": "Ministry of Finance",
+  "officialSourceUrl": "https://www.sukanyasamriddhi.org/",
+  "lastVerified": "2026-01-15T00:00:00+05:30",
+  "verificationStatus": "needs-verification",
+  "benefits": [
+    {
+      "title": "Savings account for girl child",
+      "text": "Account can be opened for girl child below 10 years; maturity at 21 years.",
+      "textHi": "10 वर्ष से कम उम्र की बालिका के लिए खाता खोला जा सकता है; परिपक्वता 21 वर्ष पर।"
+    }
+  ],
+  "eligibilityRules": [
+    { "field": "gender", "op": "eq", "value": "female", "text": "Girl child", "textHi": "बालिका" },
+    { "field": "age", "op": "lte", "value": 10, "text": "Age 10 years or below", "textHi": "10 वर्ष या उससे कम आयु" },
+    { "field": "category", "op": "exists", "value": true, "text": "Any category", "textHi": "कोई भी श्रेणी" }
+  ],
+  "ruleLogic": "AND",
+  "documentsRequired": ["Birth certificate of girl child", "Aadhaar of parents", "Identity proof of parents"],
+  "howToApply": [
+    { "step": 1, "text": "Open account at any post office or authorized bank.", "textHi": "किसी भी डाकघर या अधिकृत बैंक में खाता खोलें।" },
+    { "step": 2, "text": "Submit birth certificate and KYC documents.", "textHi": "जन्म प्रमाण पत्र और केवाईसी दस्तावेज जमा करें।" },
+    { "step": 3, "text": "Make initial deposit to activate account.", "textHi": "खाता सक्रिय करने के लिए प्रारंभिक जमा राशि जमा करें।" }
+  ],
+  "tags": ["girl-child", "savings", "education"],
+  "incomeMin": null,
+  "incomeMax": null
+}
