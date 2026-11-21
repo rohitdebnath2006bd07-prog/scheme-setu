@@ -1,0 +1,287 @@
+{
+  "common": {
+    "appName": "SchemeSetu",
+    "tagline": "Find government benefits you may qualify for",
+    "language": "Language",
+    "english": "English",
+    "hindi": "हिन्दी",
+    "assamese": "অসমীয়া",
+    "skipToContent": "Skip to main content",
+    "back": "Back",
+    "next": "Next",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "saveAsPdf": "Save as PDF / Print",
+    "copyLink": "Copy link",
+    "linkCopied": "Link copied!",
+    "officialSource": "Official source",
+    "lastVerified": "Last verified",
+    "needsVerification": "NEEDS VERIFICATION",
+    "verified": "Verified",
+    "disclaimerText": "Final eligibility is decided by the issuing authority. This is an estimate only.",
+    "privacyText": "Your answers never leave your browser. We do not store, log, or transmit them.",
+    "mayBeEligible": "You may be eligible",
+    "likelyEligible": "Likely eligible",
+    "notEligible": "Not eligible",
+    "possiblyEligible": "May be eligible, need more info",
+    "loading": "Loading…",
+    "noResults": "No results found",
+    "error": "Something went wrong",
+    "tryAgain": "Try again",
+    "editAnswers": "Edit your answers",
+    "startWizard": "Start the eligibility wizard",
+    "browseSchemes": "Browse all schemes",
+    "menu": "Menu",
+    "home": "Home",
+    "about": "About",
+    "howItWorks": "How it works",
+    "dataSources": "Data sources & methodology",
+    "privacy": "Privacy",
+    "disclaimer": "Disclaimer",
+    "reportError": "Report an error"
+  },
+  "wizard": {
+    "title": "Find schemes you may qualify for",
+    "subtitle": "Answer a few quick questions. All are optional.",
+    "progress": "Step {{step}} of {{total}}",
+    "questions": {
+      "age": {
+        "label": "What is your age?",
+        "hint": "Enter your age in years",
+        "placeholder": "Age"
+      },
+      "gender": {
+        "label": "What is your gender?",
+        "hint": "Select one option"
+      },
+      "state": {
+        "label": "Which state do you live in?",
+        "hint": "Select your state or union territory"
+      },
+      "residence": {
+        "label": "Do you live in a rural or urban area?",
+        "hint": "Select your residence type"
+      },
+      "occupation": {
+        "label": "What is your main occupation?",
+        "hint": "Select your occupation"
+      },
+      "income": {
+        "label": "What is your annual household income?",
+        "hint": "Select an income range"
+      },
+      "category": {
+        "label": "What is your social category?",
+        "hint": "Select your category"
+      },
+      "disability": {
+        "label": "Do you have a disability?",
+        "hint": "Select yes or no"
+      },
+      "student": {
+        "label": "Are you a student?",
+        "hint": "Select yes or no"
+      },
+      "bpl": {
+        "label": "Do you have a BPL (Below Poverty Line) card?",
+        "hint": "Select yes or no"
+      },
+      "marital": {
+        "label": "What is your marital status?",
+        "hint": "Select your marital status"
+      }
+    },
+    "options": {
+      "preferNotToSay": "Prefer not to say",
+      "skip": "Skip this question",
+      "male": "Male",
+      "female": "Female",
+      "other": "Other",
+      "rural": "Rural",
+      "urban": "Urban",
+      "farmer": "Farmer",
+      "labourer": "Labourer / daily wage",
+      "salaried": "Salaried / government job",
+      "selfEmployed": "Self-employed / business",
+      "studentOcc": "Student",
+      "unemployed": "Unemployed",
+      "retired": "Retired",
+      "otherOcc": "Other",
+      "under1L": "Below ₹1 lakh",
+      "oneToTwoL": "₹1–2 lakh",
+      "twoToThreeL": "₹2–3 lakh",
+      "threeToFiveL": "₹3–5 lakh",
+      "fiveToEightL": "₹5–8 lakh",
+      "eightToTwelveL": "₹8–12 lakh",
+      "aboveTwelveL": "Above ₹12 lakh",
+      "general": "General",
+      "sc": "SC",
+      "st": "ST",
+      "obc": "OBC",
+      "ews": "EWS",
+      "yes": "Yes",
+      "no": "No",
+      "single": "Single / never married",
+      "married": "Married",
+      "widowed": "Widowed",
+      "divorced": "Divorced / separated"
+    },
+    "buttons": {
+      "back": "Back",
+      "next": "Next",
+      "finish": "See my results",
+      "edit": "Edit answers"
+    }
+  },
+  "schemes": {
+    "title": "Government schemes",
+    "subtitle": "Browse and search welfare schemes by category, level, and state.",
+    "category": "Category",
+    "level": "Level",
+    "state": "State",
+    "central": "Central",
+    "stateLevel": "State",
+    "categories": {
+      "agriculture": "Agriculture",
+      "health": "Health",
+      "education": "Education",
+      "housing": "Housing",
+      "women-child": "Women & Child",
+      "senior-citizens": "Senior Citizens",
+      "employment": "Employment",
+      "disability": "Disability",
+      "finance": "Finance",
+      "food": "Food & Ration",
+      "other": "Other"
+    },
+    "states": {
+      "AS": "Assam",
+      "DL": "Delhi",
+      "MH": "Maharashtra",
+      "UP": "Uttar Pradesh",
+      "WB": "West Bengal",
+      "TN": "Tamil Nadu",
+      "KA": "Karnataka",
+      "GJ": "Gujarat",
+      "RJ": "Rajasthan",
+      "PB": "Punjab",
+      "HR": "Haryana",
+      "BR": "Bihar",
+      "OD": "Odisha",
+      "AP": "Andhra Pradesh",
+      "TS": "Telangana",
+      "KL": "Kerala",
+      "MP": "Madhya Pradesh",
+      "CG": "Chhattisgarh",
+      "JH": "Jharkhand",
+      "UK": "Uttarakhand",
+      "HP": "Himachal Pradesh",
+      "JK": "Jammu & Kashmir",
+      "LA": "Ladakh",
+      "CH": "Chandigarh",
+      "PY": "Puducherry",
+      "GA": "Goa",
+      "MZ": "Mizoram",
+      "ML": "Meghalaya",
+      "TR": "Tripura",
+      "MN": "Manipur",
+      "NL": "Nagaland",
+      "AR": "Arunachal Pradesh",
+      "SK": "Sikkim",
+      "AN": "Andaman & Nicobar",
+      "DN": "Dadra & Nagar Haveli",
+      "DD": "Daman & Diu",
+      "LD": "Lakshadweep"
+    },
+    "card": {
+      "benefits": "Benefits",
+      "ministry": "Ministry",
+      "apply": "Apply online",
+      "documents": "Documents required",
+      "eligibility": "Eligibility",
+      "viewDetails": "View details"
+    },
+    "empty": {
+      "title": "No schemes found",
+      "description": "Try adjusting your filters or search terms."
+    },
+    "detail": {
+      "benefits": "Benefits",
+      "eligibilityCriteria": "Eligibility criteria",
+      "documentsRequired": "Documents required",
+      "howToApply": "How to apply",
+      "officialApplyLink": "Apply on official website",
+      "source": "Official source",
+      "lastVerified": "Last verified",
+      "unverified": "This record has not been verified against an official source.",
+      "documents": "Documents",
+      "steps": "Steps"
+    }
+  },
+  "results": {
+    "title": "Your results",
+    "subtitle": "Schemes you may qualify for, ranked by match.",
+    "disclaimer": "These are estimates only. Final eligibility is decided by the issuing authority.",
+    "privacy": "Your answers were used only in your browser. They were not stored or shared.",
+    "noMatches": "No exact matches",
+    "noMatchesDescription": "No schemes matched all your answers. Here are schemes you may be partially eligible for:",
+    "partialMatches": "Partial matches",
+    "explanation": {
+      "matched": "Matched: {{text}}",
+      "failed": "Does not match: {{text}}",
+      "missing": "More info needed: {{text}}"
+    },
+    "editAnswers": "Edit your answers",
+    "startOver": "Start over"
+  },
+  "pages": {
+    "about": {
+      "title": "About SchemeSetu",
+      "heading": "About SchemeSetu",
+      "intro": "SchemeSetu helps Indian citizens find government welfare schemes they may qualify for.",
+      "mission": "Our mission is to make scheme discovery simple, private, and accessible to everyone — including first-time internet users and people on low-end phones."
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "heading": "How it works",
+      "step1": "Answer a few optional questions about yourself.",
+      "step2": "We match your answers against scheme rules — all in your browser.",
+      "step3": "See schemes you may qualify for, with plain-language explanations.",
+      "step4": "Apply through the official website linked on each scheme page."
+    },
+    "dataSources": {
+      "title": "Data sources & methodology",
+      "heading": "Data sources & methodology",
+      "intro": "All scheme data comes from official government sources.",
+      "methodology": "Each scheme record includes the official source URL and a last-verified date. Records that have not been verified are clearly marked.",
+      "verification": "We validate all scheme data at build time. The build fails if any record is invalid."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "heading": "Privacy",
+      "intro": "SchemeSetu is built for privacy by design.",
+      "noStorage": "We do not store, log, or transmit your answers.",
+      "noAccounts": "There are no user accounts.",
+      "noAnalytics": "We do not use third-party analytics or trackers.",
+      "clientSide": "Eligibility matching runs entirely in your browser.",
+      "noUrls": "Your answers are never included in URLs or shared with any server.",
+      "language": "Your language choice is stored in your browser's local storage. No other personal data is stored."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "heading": "Disclaimer",
+      "intro": "SchemeSetu is an informational tool, not an official government website.",
+      "noGuarantee": "We do not guarantee eligibility. Final eligibility is decided by the issuing authority.",
+      "notOfficial": "Always verify details on the official scheme website before applying.",
+      "liability": "We are not liable for any decisions made based on information on this site."
+    },
+    "reportError": {
+      "title": "Report an error",
+      "heading": "Report an error",
+      "intro": "Found incorrect scheme information? Let us know.",
+      "email": "Email us",
+      "mailtoBody": "SchemeSetu error report:\n\nScheme: \nIssue: \nSource URL: \n\n---\nSent from SchemeSetu"
+    }
+  }
+}
